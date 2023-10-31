@@ -1,0 +1,123 @@
+.navbar {
+  /* background: #012356; */
+  background: linear-gradient(
+    to right,
+    #0005,
+    #567,
+    #fff,
+    rgb(102, 150, 199),
+    #890
+  );
+
+  opacity: 0.8;
+}
+.nav-item .nav-link {
+  color: #111;
+  font-size: 20px;
+}
+.nav-item .nav-link:hover {
+  color: #712371;
+}
+
+.cards {
+  min-height: 190px;
+  transition: all 0.3s linear;
+}
+.cards .card-body {
+  border-left: 4px solid #0005ff;
+}
+
+.cards:hover {
+  transform: scale(1.03);
+}
+.cards h4 {
+  color: blue;
+}
+
+.loading-text {
+  color: blue;
+}
+
+.profileDetails {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 2pz solid gray;
+  margin: 10px 0px;
+}
+
+.abc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+  position: relative;
+  cursor: pointer;
+}
+
+.abc:hover::after {
+  display: block;
+}
+
+.abc span[title]::after {
+  content: attr(title);
+  background-color: #333;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+}
+
+span[title]:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.badges {
+  background: #0005ff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin: auto;
+  font-size: 17px;
+  font-weight: bold;
+  box-shadow: 0px 1px 4px black;
+  cursor: pointer;
+}
+
+/* for the network css  */
+.network {
+  margin: 20px auto;
+  text-align: center;
+}
+.network ul {
+  list-style-type: none;
+  color: red;
+  font-size: 17px;
+}
+
+input {
+  outline: none !important;
+}
+
+h3 {
+  color: blue !important;
+  text-shadow: 1px 2px 3px red !important;
+}
+
+

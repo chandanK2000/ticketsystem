@@ -1,0 +1,49 @@
+@keyframes changeColor {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: blue;
+  }
+  50% {
+    background-color: green;
+  }
+  75% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+.element {
+  animation: changeColor 10s infinite;
+}
+body {
+  background-color: rgba(190, 228, 221, 0.2);
+
+  cursor: pointer;
+}
+
+.card-header {
+  background-color: #234568;
+  color: white;
+}
+.buttons {
+  color: white;
+  padding: 6px 8px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: rgb(234, 10, 150);
+  font-weight: bold;
+}
+.buttons:hover {
+  background-color: #001455;
+}
+.main-element {
+  transition: transform 0.3s;
+}
+.main-element:hover {
+  transform: scale(1.1);
+}
